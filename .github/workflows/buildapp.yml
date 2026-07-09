@@ -8,14 +8,14 @@ name: Build and Package SCInsta
 on:
     workflow_dispatch:
         inputs:
-            decrypted_instagram_url:
-                description: "The direct URL to the decrypted Instagram IPA"
+            decrypted_instagram_url: https://drive.google.com/file/d/1annynM9q7Q9OUfCisRwgrVWgzsbFx0C7/view?usp=sharingh
+            description: "The direct URL to the decrypted Instagram IPA"
                 default: ""
                 required: true
                 type: string
             upload_artifact:
                 description: "Upload Artifact"
-                default: true
+                default: false
                 required: false
                 type: boolean
   
