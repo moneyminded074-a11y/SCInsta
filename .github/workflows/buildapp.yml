@@ -22,10 +22,10 @@ on:
 concurrency:
     group: ${{ github.workflow }}-${{ github.ref }}
     cancel-in-progress: true
-jobs:
+jobs: 
     build:
         name: Build SCInsta
-        runs-on: macos-latest
+        runs-on: self-hosted
         permissions:
             contents: write
 
